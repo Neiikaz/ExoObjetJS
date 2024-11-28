@@ -60,6 +60,7 @@ console.log(cercle.surface());
 
 //Exercice 1 deuxième partie
  function Produit(nom,prix,description){
-    this.nom = Vang;
-    this.prix = 
+    this.nom = 'Vang';
+    this.prix = 9.5,
+    this.description = 'Cher'
 }
