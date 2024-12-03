@@ -67,22 +67,24 @@ console.log(cercle.surface());
 Produit.prototype.infosProduit = function(){ //Ajout de infosProduit exercice 2 deuxième partie
     return 'Il s\'appel ' + this.nom + ' son prix est de ' + this.prix + '€' + ' et ça déscription c\'est' + this.description; 
 }
-let produitJ = new Produit('Pc', 50,' un outil trop bien'); //Ajout de 3 produits exercice 3 deuxième partie
+//Ajout de 3 produits exercice 3 deuxième partie rajout de 3 produit avec leurs paramètres
+let produitJ = new Produit('Pc', 50,' un outil trop bien'); 
 let produitS = new Produit('Siri', 1900,' trop cher'); 
 let produitT = new Produit('Tanguy', 1, ' nul');
 console.log(produitJ.infosProduit());
 console.log(produitT.infosProduit());
 console.log(produitS.infosProduit());
 
-//Exercice 4 Création d'une fonction constructeur pour un étudiant
+//Exercice 4 Création d'une fonction constructeur pour un étudiant avec les spécificité age etc
 function Etudiant(nom,niveau,age){
     this.nom = nom;
     this.age = age;
     this.niveau = niveau;
 }
-Etudiant.prototype.presentation = function(){
+Etudiant.prototype.presentation = function(){ //Exercice 5 j'avoute ma méthode pour gérer les info en méttant une petite description en phrase
     return 'Je suis ' + this.nom + ' j\'étudie en ' + this.niveau + ' et j\'ai ' + this.age + 'ans';
 }
+//Je créé 4 étudiant via mon constructeur et ma variable instancier avec let 'cequejeveux' = new 'nom de mon constructeur'.
 let etudiant1 = new Etudiant('Imran','5ème année',22);
 let etudiant2 = new Etudiant('Tanguy','5ème année',27);
 let etudiant3 = new Etudiant('Ilan','5ème année',30);
@@ -91,3 +93,4 @@ console.log(etudiant1.presentation());
 console.log(etudiant2.presentation());
 console.log(etudiant3.presentation());
 console.log(etudiant4.presentation());
+
