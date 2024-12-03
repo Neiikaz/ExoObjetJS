@@ -94,3 +94,18 @@ console.log(etudiant2.presentation());
 console.log(etudiant3.presentation());
 console.log(etudiant4.presentation());
 
+//Exercice 7 : Création d'une fonction cnstructeur pour une voiture
+function Voiture(marque,annee,couleur){
+    this.marque = marque;
+    this.annee = annee;
+    this.couleur = couleur;
+}
+Voiture.prototype.afficherDetails = function(){
+    return 'Voici une voiture de marque ' + this.marque + ' de ' + this.annee + ' est de couleur' + this.couleur;
+}
+let voiture1 = new Voiture('Citroen C4', 2005, 'gris métalique');
+let voiture2 = new Voiture('Peugeot 208', 2016, 'rouge rubis');
+let voiture3 = new Voiture('Alfa Romeo', 2019, 'blanche');
+console.log(voiture1.afficherDetails());
+console.log(voiture2.afficherDetails());
+console.log(voiture3.afficherDetails());
