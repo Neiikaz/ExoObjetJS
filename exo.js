@@ -60,7 +60,16 @@ console.log(cercle.surface());
 
 //Exercice 1 deuxième partie
  function Produit(nom,prix,description){
-    this.nom = 'Vang';
-    this.prix = 9.5,
-    this.description = 'Cher'
+    this.nom = nom;
+    this.prix = prix,
+    this.description = description;
 }
+    Produit.prototype.infosProduit = function(){ //Ajout de infosProduit exercice 2 deuxième partie
+        return 'Il s\'appel ' + this.nom + ' son prix est de ' + this.prix + '€' + ' et ça déscription c\'est' + this.description; 
+}
+let produitJ = new Produit('Pc', 50,' un outil trop bien'); //Ajout de 3 produits exercice 3 deuxième partie
+let produitS = new Produit('Siri', 1900,' trop cher'); 
+let produitT = new Produit('Tanguy', 1, ' nul');
+console.log(produitJ.infosProduit());
+console.log(produitT.infosProduit());
+console.log(produitS.infosProduit());
