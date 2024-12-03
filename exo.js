@@ -94,7 +94,7 @@ console.log(etudiant2.presentation());
 console.log(etudiant3.presentation());
 console.log(etudiant4.presentation());
 
-//Exercice 7 : Création d'une fonction cnstructeur pour une voiture
+//Exercice 7 et 8: Création d'une fonction cnstructeur pour une voiture
 function Voiture(marque,annee,couleur){
     this.marque = marque;
     this.annee = annee;
